@@ -1,0 +1,75 @@
+body{
+    background-color:lightgrey;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    color:white;
+}
+.animConf{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.anim-1{
+    margin-left: 80px;
+    animation-name: animation-1;
+    background-color:darkgreen;
+}
+
+.anim-2{
+    animation-name: animation-2;
+    background-color:chartreuse;
+}
+
+.anim-3{
+    animation-name: animation-3;
+    background-color:rosybrown;
+}
+
+@keyframes animation-1{
+    0%{
+        translate: 0px 0px;
+    }
+    100%{
+        translate: 0px 160px;
+    }
+}
+
+@keyframes animation-2{
+    0%{
+        translate: 0px 0px;
+    }
+    100%{
+        translate: 160px 0px;
+        background-color: blueviolet;
+    }
+}
+
+@keyframes animation-3{
+    0%{
+        translate: 0px 0px;
+    }
+    33%{
+        translate: 160px 0px;
+    }
+    66%{
+        translate: 0px 160px;
+    }
+    100%{
+        translate: 160px 160px;
+        background-color: aqua;
+    }
+}
